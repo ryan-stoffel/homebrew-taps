@@ -1,6 +1,6 @@
 cask "photon" do
-  version "0.3.6"
-  sha256 "f517475271f928957808ae6400b56699ad1b28ff3414b5387db88a44fe916fc1"
+  version "0.3.7"
+  sha256 "b56543ab7072fab4e2e7dfcdc48f13def76b658a4d48313ecdc062e3135e81df"
 
   url "https://github.com/RyanStoffel/photon/releases/download/v#{version}/Photon-#{version}.zip"
   name "Photon"
