@@ -1,4 +1,4 @@
-cask "hush" do
+cask "hush-dictation" do
   version "0.2.0-dev.4"
   sha256 "5e358fe842bbbc9a76e818fc105fcf6c8b4a377a5755dbd2e80df6fb237a449e"
 
