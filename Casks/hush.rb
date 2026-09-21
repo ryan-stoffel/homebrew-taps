@@ -1,6 +1,6 @@
 cask "hush" do
-  version "0.2.0-dev.3"
-  sha256 "b4267ea64ea060a670de58d4f5d74ff6e05a02b7bfd52a74e609de8e76c311a4"
+  version "0.2.0-dev.4"
+  sha256 "5e358fe842bbbc9a76e818fc105fcf6c8b4a377a5755dbd2e80df6fb237a449e"
 
   url "https://github.com/ryan-stoffel/hush/releases/download/v#{version}/Hush-#{version}.zip"
   name "Hush"
@@ -22,9 +22,10 @@ cask "hush" do
   caveats <<~EOS
     Hush is not notarized yet, so macOS blocks the first launch of a downloaded copy.
 
-      Install with:  brew install --cask --no-quarantine ryan-stoffel/taps/hush
-      Or afterwards: xattr -dr com.apple.quarantine /Applications/Hush.app
+      After install: xattr -dr com.apple.quarantine /Applications/Hush.app
       Or:            open Hush once, then System Settings > Privacy & Security > Open Anyway.
+
+    Homebrew 7 removed --no-quarantine, so repeat the xattr step after each upgrade.
 
     Hush asks for Microphone, Accessibility, and Input Monitoring on first use:
     the microphone to hear you, Accessibility to paste the text at your cursor,
