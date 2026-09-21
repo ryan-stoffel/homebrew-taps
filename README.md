@@ -12,7 +12,7 @@ brew install tidy
 brew install forge
 brew install cadence
 brew install --cask photon
-brew install --cask --no-quarantine ryan-stoffel/taps/hush
+brew install --cask ryan-stoffel/taps/hush
 ```
 
 or directly:
@@ -23,7 +23,7 @@ brew install ryan-stoffel/taps/tidy
 brew install ryan-stoffel/taps/forge
 brew install ryan-stoffel/taps/cadence
 brew install --cask ryan-stoffel/taps/photon
-brew install --cask --no-quarantine ryan-stoffel/taps/hush
+brew install --cask ryan-stoffel/taps/hush
 ```
 
 `brew trust` is needed on Homebrew 7 and later before short names (and `brew upgrade`)
@@ -47,7 +47,9 @@ the canonical `ryan-stoffel/taps` name in Homebrew commands.
 
 None of these apps are notarized. On first launch, macOS will block them —
 go to **System Settings > Privacy & Security**, find the message about the
-app, and click **Open Anyway**.
+app, and click **Open Anyway**. Alternatively, clear the quarantine flag after install, for
+example `xattr -dr com.apple.quarantine /Applications/Hush.app` (Homebrew 7 removed the
+`--no-quarantine` option).
 
 ## Apps
 
