@@ -1,6 +1,6 @@
 cask "hush" do
-  version "0.2.0-dev.2"
-  sha256 "cdecb4bb8a3f17b66c51a6febb08234d03e4371519050d5bf3d5ea3bd1266f57"
+  version "0.2.0-dev.3"
+  sha256 "b4267ea64ea060a670de58d4f5d74ff6e05a02b7bfd52a74e609de8e76c311a4"
 
   url "https://github.com/ryan-stoffel/hush/releases/download/v#{version}/Hush-#{version}.zip"
   name "Hush"
