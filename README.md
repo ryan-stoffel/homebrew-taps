@@ -12,7 +12,7 @@ brew install tidy
 brew install forge
 brew install cadence
 brew install --cask photon
-brew install --cask ryan-stoffel/taps/hush-dictation
+brew install --cask ryan-stoffel/taps/hush
 ```
 
 or directly:
@@ -23,13 +23,15 @@ brew install ryan-stoffel/taps/tidy
 brew install ryan-stoffel/taps/forge
 brew install ryan-stoffel/taps/cadence
 brew install --cask ryan-stoffel/taps/photon
-brew install --cask ryan-stoffel/taps/hush-dictation
+brew install --cask ryan-stoffel/taps/hush
 ```
 
 `brew trust` is needed on Homebrew 7 and later before short names (and `brew upgrade`)
 can load formulae and casks from a third-party tap; the fully qualified names below work
-without it. The cask is named `hush-dictation` because homebrew-cask ships an
-unrelated cask called `hush`, and a short token would upgrade to that one instead.
+without it. `hush` must always be fully qualified, including for upgrades
+(`brew upgrade --cask ryan-stoffel/taps/hush`): homebrew-cask ships an unrelated cask
+called `hush`, and a bare token installs that one instead. The same applies to
+`caffeine`. Plain `brew upgrade` with no name is safe for both.
 
 If Photon is already installed and Homebrew still references the retired singular tap:
 

@@ -1,4 +1,4 @@
-cask "hush-dictation" do
+cask "hush" do
   version "0.2.0-dev.5"
   sha256 "7316663dbd96117660efc34aaf8242bf342b514431ab3d8b1c5acbe9e131394d"
 
@@ -26,6 +26,10 @@ cask "hush-dictation" do
       Or:            open Hush once, then System Settings > Privacy & Security > Open Anyway.
 
     Homebrew 7 removed --no-quarantine, so repeat the xattr step after each upgrade.
+
+    Always use the fully qualified name, including for upgrades:
+      brew upgrade --cask ryan-stoffel/taps/hush
+    A bare "hush" resolves to an unrelated Safari extension in homebrew-cask.
 
     Hush asks for Microphone, Accessibility, and Input Monitoring on first use:
     the microphone to hear you, Accessibility to paste the text at your cursor,
