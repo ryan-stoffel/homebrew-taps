@@ -1,6 +1,6 @@
 cask "auto-peer-evals" do
-  version "1.0.0"
-  sha256 "66cb51e61341ae109d176c1cb717f32465052f7d3d5b7bded40d842934259edf"
+  version "1.0.1"
+  sha256 "349b03a6a1598fc5b919fb5c28bb1ef5d0b80393baa9efeca9345d9f4eb84f11"
 
   url "https://github.com/ryan-stoffel/homebrew-taps/releases/download/auto-peer-evals-v#{version}/AutoPeerEvals.zip"
   name "Auto Peer Evals"
