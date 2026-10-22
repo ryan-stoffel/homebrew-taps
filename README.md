@@ -1,6 +1,6 @@
 # homebrew-taps
 
-Homebrew tap for Ryan Stoffel's personal macOS software: Caffeine, Tidy, Cadence, Photon, and Hush.
+Homebrew tap for Ryan Stoffel's personal macOS software: Caffeine, Tidy, Cadence, Photon, Hush, and Mochi.
 
 ## Install
 
@@ -12,6 +12,7 @@ brew install tidy
 brew install cadence
 brew install --cask photon
 brew install --cask ryan-stoffel/taps/hush
+brew install --cask ryan-stoffel/taps/mochi
 ```
 
 or directly:
@@ -22,6 +23,7 @@ brew install ryan-stoffel/taps/tidy
 brew install ryan-stoffel/taps/cadence
 brew install --cask ryan-stoffel/taps/photon
 brew install --cask ryan-stoffel/taps/hush
+brew install --cask ryan-stoffel/taps/mochi
 ```
 
 `brew trust` is needed on Homebrew 7 and later before short names (and `brew upgrade`)
@@ -29,7 +31,7 @@ can load formulae and casks from a third-party tap; the fully qualified names be
 without it. `hush` must always be fully qualified, including for upgrades
 (`brew upgrade --cask ryan-stoffel/taps/hush`): homebrew-cask ships an unrelated cask
 called `hush`, and a bare token installs that one instead. The same applies to
-`caffeine`. Plain `brew upgrade` with no name is safe for both.
+`caffeine` and `mochi`. Plain `brew upgrade` with no name is safe for all three.
 
 If Photon is already installed and Homebrew still references the retired singular tap:
 
