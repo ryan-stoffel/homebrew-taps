@@ -1,6 +1,6 @@
 cask "mochi" do
-  version "1.2"
-  sha256 "72c7b6771a6d4770b7f94e5ce8faa8aed3f6576b0f0c02db513cd08b91ed2fc6"
+  version "1.3"
+  sha256 "e7a35ae057c5b39a5fb758008da6ba89bd65215c07cf49d26e7472d5a6454676"
 
   url "https://github.com/ryan-stoffel/mochi/releases/download/v#{version}/Mochi-#{version}.zip"
   name "Mochi"
